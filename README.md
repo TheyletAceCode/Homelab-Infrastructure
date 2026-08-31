@@ -69,3 +69,48 @@ My main PC is used to:
 - Monitor services 
 - Test and troubleshoot problems
 - Create project documentation
+
+## Software and Services
+
+### Infrastructure and Administration
+
+| Technology | Purpose |
+|---|---|
+| Docker | Deploys applications in isolated containers |
+| Docker Compose | Defines and manages multi-container applications |
+| Portainer | Provides web-based container administration |
+| Tailscale | Provides private remote access to the homelab |
+| Uptime Kuma | Monitors service availability and health |
+| Gluetun | Routes selected container traffic through a VPN |
+| Mullvad VPN | Provides the VPN connection used by Gluetun |
+
+### Personal Cloud and Security
+
+| Service | Purpose |
+|---|---|
+| Vaultwarden | Self-hosted password management |
+| Nextcloud | Private file storage and cloud services |
+| Immich | Self-hosted photo and video management |
+| Pi-hole | Network-wide DNS filtering and ad blocking |
+
+### Media Services
+
+| Service | Purpose |
+|---|---|
+| Jellyfin | Primary self-hosted media-streaming platform |
+| Jellyseerr | Manages media requests |
+| Navidrome | Provides self-hosted music streaming |
+| Sonarr | Manages and organizes television libraries |
+| Radarr | Manages and organizes movie libraries |
+| Lidarr | Manages and organizes music libraries |
+| Bazarr | Manages subtitles |
+| Prowlarr | Manages integrations used by media applications |
+
+### Supporting Services
+
+| Service | Purpose |
+|---|---|
+| PostgreSQL | Provides database services for Immich |
+| Redis | Supports Immich caching and background tasks |
+| qBittorrent | Download client routed through the VPN container |
+| NZBGet | Download-management application |
