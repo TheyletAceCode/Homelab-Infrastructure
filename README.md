@@ -245,3 +245,20 @@ Reviewed Docker Compose files, application logs, environment settings, and
 configuration syntax to identify errors preventing services from operating
 correctly.
 
+## Skills Demonstrated
+
+This project demonstrates practical experience with:
+
+- Ubuntu Linux administration
+- Docker and Docker Compose
+- Container deployment and management
+- SSH and remote system administration
+- TCP/IP, DNS, ports, and VPN concepts
+- Tailscale remote access
+- Docker networking and volume mapping
+- System and application monitoring
+- Storage and capacity management
+- Log analysis and troubleshooting
+- Backup planning
+- Access control
+- Technical documentation
