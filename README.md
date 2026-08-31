@@ -35,3 +35,37 @@ flowchart TD
     Mini --> Monitor["Monitoring and management"]
     Pi --> DNS["Network-wide DNS filtering"]
 ```
+
+## Hardware
+
+### Primary Server
+
+| Component | Specification |
+|---|---|
+| Device | Beelink Mini S |
+| Processor | Intel N95 |
+| CPU | 4 cores |
+| Memory | 8 GB |
+| Internal storage | 256 GB |
+| External storage | 6 TB |
+| Operating system | Ubuntu 24.04.4 LTS |
+| Primary workload | Docker containers and self-hosted services |
+
+### Raspberry Pi
+
+| Component | Specification |
+|---|---|
+| Device | Raspberry Pi 5 |
+| Primary service | Pi-hole |
+| Purpose | Network-wide DNS filtering and advertisement blocking |
+
+### Main PC
+
+My main PC is used to:
+
+- Connect to the server through SSH
+- Configure and maintain applications
+- Access administrative dashboards
+- Monitor services 
+- Test and troubleshoot problems
+- Create project documentation
