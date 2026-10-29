@@ -1,13 +1,14 @@
 # Testing
 
-Results are recorded only from real runs, with date and device. Nothing below has run yet.
+Results are recorded only from real runs, with date and device. All iPhone and car tests are PENDING.
 
 ## Phase 0 checks
 
 | ID | Check | Result |
 |---|---|---|
 | A1 | `bash -n scripts/audit-readonly.sh` (syntax) | PASS 2026-10-29 (cloud session; script not run against the server) |
-| A2 | Script run on the server changes nothing (compare `ls -l` of DataFolder before and after) | Not run |
+| A2 | Live read-only audit on the server | DONE 2026-10-29: no changes; temp DB copy deleted |
+| A3 | Navidrome reachable over tailnet HTTPS | Config verified 2026-10-29; playback not yet tested |
 
 ## Client acceptance (Phase 1, on the owner's iPhone)
 
@@ -15,11 +16,13 @@ Results are recorded only from real runs, with date and device. Nothing below ha
 |---|---|---|---|---|
 | T1 | Connect at home and away over the tailnet HTTPS URL | Library loads in under 5 s | — | — |
 | T2 | Download an album, enable airplane mode, play it | Plays fully with no network | — | — |
+| T2b | Interrupt a download (airplane mode mid-download), reconnect | Download resumes or retries without duplicates | — | — |
 | T3 | CarPlay: browse playlists, play, skip, seek | All work from the car screen | — | — |
 | T4 | Bluetooth: lock-screen and headset controls; resume after a phone call | Resumes at the same position | — | — |
 | T5 | Synced lyrics on a track with an `.lrc` sidecar | Lines highlight in time | — | — |
 | T6 | Switch Wi-Fi to cellular mid-song | Under 3 s gap or none | — | — |
 | T7 | Scrobble or play count updates in Navidrome | Count increments | — | — |
+| T7b | Play offline, then reconnect | Offline plays reach Navidrome | — | — |
 | T8 | Smart playlist appears and updates after a scan | Contents match rules | — | — |
 
 ## Server acceptance (Phase 1)

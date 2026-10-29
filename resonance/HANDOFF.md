@@ -1,18 +1,19 @@
 # Handoff
 
-## 2026-10-29: Initialization and read-only audit
+## 2026-10-29: Initialization and live read-only audit
 
 Done:
-- Read this repo (README only; no compose or config files are committed) and the private Rosetta repo for host facts.
-- Researched iPhone clients, Navidrome smart playlists, scrobbling, backup options and playlist-import tools.
-- Wrote this folder and `scripts/audit-readonly.sh` on branch `claude/project-thread-o5ksrz`. Nothing on the server was touched.
+- Docs in this folder (PR #1 on Homelab-Infrastructure, not merged).
+- Live read-only audit on the server (results in AUDIT.md sections 1–2). Nothing changed.
+
+Key facts:
+- Navidrome 0.64.2 runs fine, served privately over `tailscale serve`; library mount is read-only.
+- **The library is empty** (0 songs). No audio found on the server's data disk or home folder.
+- Amperfy is installed on the iPhone but has never connected.
+- RAM is tight (2.7 GB available, swap in use). Backups exist but sit on the media disk.
 
 Waiting on the owner:
-1. Run the audit script on the server, or approve a live read-only session.
-2. Approve or change the plan, the client (D-002) and the scrobbling choice (D-006).
+1. Where the music files are today.
+2. Approval of the audit and architecture (checkpoint A in AUDIT.md section 10).
 
-Next session: fold the script output into AUDIT.md and ARCHITECTURE.md (sanitized), then
-prepare Phase 1 as a reviewed change list with the exact compose diff and rollback commands.
-
-Known gaps: Navidrome version, volumes, free space, library size and formats, existing
-playlists and clients, backup coverage. All UNVERIFIED.
+Next session: fix the Amperfy connection, then checkpoint B (staging folder and first test album).
