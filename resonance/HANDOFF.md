@@ -17,3 +17,9 @@ Waiting on the owner:
 2. Approval of the audit and architecture (checkpoint A in AUDIT.md section 10).
 
 Next session: fix the Amperfy connection, then checkpoint B (staging folder and first test album).
+
+## 2026-10-30: Upgrade 2.0 plan
+
+- Wrote UPGRADE_2_PLAN.md (audit delta, architecture, sequence, first safe tasks). Nothing deployed.
+- Live re-check pending: the server session disconnected; owner asked to reconnect.
+- Waiting on owner: plan approval, private `resonance` repo, Spotify Premium yes/no, AcoustID account, off-disk backup target.

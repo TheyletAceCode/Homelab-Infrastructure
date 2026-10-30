@@ -16,3 +16,8 @@ Status: Proposed (awaiting owner approval), Accepted, or Rejected.
 | D-010 | Matcher writes `.m3u` files instead of calling the Subsonic API | Reviewable, reversible, needs no credentials | Proposed |
 | D-011 | No custom iPhone app | Developer fees and CarPlay entitlement; existing clients meet the needs | Proposed |
 | D-012 | Mix job and recommendations wait until the library has music and a few weeks of history | Library is empty (verified 2026-10-29) | Proposed |
+| D-013 | beets in copy mode as the organizer; originals kept in `_originals`; medium/low confidence to review | Accurate tagging without risking source files | Proposed |
+| D-014 | No SoundCloud API (needs paid Artist Pro); use oEmbed metadata and artist-enabled downloads only | No new costs | Proposed |
+| D-015 | Spotify via own Development Mode app only if the owner has Premium; otherwise Spotify's data export | API rules since 2026-03-09 | Open |
+| D-016 | Tubly files accepted only as files the owner is entitled to, always reviewed unless strongly matched | YouTube terms; weak metadata | Proposed |
+| D-017 | Defer AudioMuse-AI and mood playlists | Needs 8 GB RAM + PostgreSQL + Redis; 2.7 GB free | Proposed |

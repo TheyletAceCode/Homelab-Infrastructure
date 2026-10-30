@@ -23,7 +23,8 @@ flowchart LR
 
 | File | Purpose |
 |---|---|
-| [AUDIT.md](AUDIT.md) | First read-only audit: verified facts, assumptions, proposals |
+| [AUDIT.md](AUDIT.md) | Read-only audit: verified facts, compatibility matrix |
+| [UPGRADE_2_PLAN.md](UPGRADE_2_PLAN.md) | Upgrade 2.0: organization, intake pipeline, playlist import, discovery |
 | [PROJECT_GOAL.md](PROJECT_GOAL.md) | Product objectives |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Current and proposed components |
 | [ROADMAP.md](ROADMAP.md) | Phases, budgets, acceptance tests, risks, rollback |
